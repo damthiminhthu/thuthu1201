@@ -1,0 +1,245 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-image: url('https://gitiho.com/caches/p_medium_large//uploads/315313/images/image_hinh-nen-powerpoint-mau-hong-1-min(1).jpg');
+    background-size: cover; /* Đảm bảo ảnh nền phủ kín */
+    background-position: center; /* Căn giữa ảnh */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.profile-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Căn trái */
+    padding: 15px;
+    margin-left: -5cm; /* Lùi sang phải khoảng 2cm */
+    white-space: nowrap; /* Ngăn không cho xuống dòng */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    margin-top: 1cm;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(173, 88, 88, 0.2);
+}
+
+h1 {
+    font-size: 2.5em; /* Kích thước chữ lớn cho tiêu đề chính */
+    color: rgb(114, 65, 88);
+    text-align: left; /* Căn trái tiêu đề */
+}
+
+h2 {
+    font-size: 1.4em; /* Kích thước chữ lớn cho tiêu đề phụ */
+    color: rgb(95, 29, 29);
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+h3 {
+    font-size: 1.3em; /* Kích thước chữ lớn cho tiêu đề phụ */
+    color: rgb(95, 29, 29);
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    font-size: 1.2em; /* Kích thước chữ lớn cho danh sách */
+    color: #491f38;
+}
+
+.info-section {
+    margin-top: -2.75cm; /* Lùi lên khoảng 2cm */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: -2cm;
+}
+
+.social-links {
+    margin-top: -0.75cm;
+    font-size: 1.25em; /* Kích thước chữ lớn cho danh sách */
+    text-align: center; /* Căn giữa liên kết mạng xã hội */
+    margin-left: -2cm; /* Lùi sang trái 2cm */
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #8b5b7f;
+    font-weight: bold;
+    transition: transform 0.3s;
+    font-size: 1em; /* Kích thước chữ lớn cho liên kết mạng xã hội */
+}
+
+.social-links a:hover { 
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.tabs {
+    display: flex;
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    top: 20px; /* Khoảng cách từ trên xuống */
+    right: 20px; /* Khoảng cách từ bên phải */
+}
+
+.tab {
+    background-color: #8b5b7f;
+    color: white;
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+    margin: 0 5px; /* Khoảng cách giữa các tab */
+    font-size: 14px;
+}
+
+.content-section {
+    flex: 3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-content {
+    display: none;
+    text-align: center; /* Căn giữa nội dung tab */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    max-width: 300px; /* Chiều rộng tối đa để giữ cân đối */
+    margin: 2cm 0; /* Lùi xuống 3cm */
+    margin-left: -9cm; /* Lùi sang trái 2cm */
+}
+
+.tab-content h2 {
+    color: rgb(95, 29, 29);
+}
+ul {
+    margin-left: 2cm;        /* Lùi sang phải 2cm cho danh sách */
+    margin-top: 2cm;         /* Lùi xuống 2cm cho danh sách */
+}
+.hobbies-row {
+    display: flex; /* Sử dụng Flexbox để căn giữa các hình ảnh */
+    justify-content: center; /* Căn giữa các hình ảnh */
+    margin-top: 20px; /* Khoảng cách giữa nội dung và hình ảnh */
+    margin-top: 3cm;
+    margin-left: 4cm;
+}
+
+.hobby-img {
+    width: 180px; /* Đặt chiều rộng cho hình ảnh */
+    height: 180px; /* Đặt chiều cao cho hình ảnh */
+    object-fit: cover; /* Đảm bảo hình ảnh được chỉnh sửa đúng cách */
+    margin: 0 10px; /* Khoảng cách giữa các hình ảnh */
+    border-radius: 10px; /* Bo góc (tùy chọn) */
+}
+/* Container for skills section */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.skills-section {
+    margin-bottom: 20px;
+    margin-top: 1.5cm; 
+
+}
+.skill-name {
+    margin-bottom: 1.5cm; /* Khoảng cách 3cm giữa chữ và thanh ngang */
+    font-size: 1em; /* Kích thước chữ lớn hơn */
+    font-family: 'Arial', sans-serif; /* Thay đổi kiểu chữ (bạn có thể chọn kiểu khác nếu thích) */
+    color: #702a0e; /* Màu chữ mới (màu xanh lam) */
+    font-weight: bold; /* Làm chữ đậm */
+    text-align: left; /* Căn trái chữ (tùy chọn) */
+
+}
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Khoảng cách giữa các kỹ năng */
+}
+
+.skill span {
+    width: 100px; /* Chiều rộng cho tên kỹ năng */
+    font-size: 1.25em;
+    color: #3f2424;
+}
+
+.progress-container {
+    position: relative; /* Cần thiết để định vị các phần tử bên trong */
+    width: 100%; /* Chiều rộng của container */
+    max-width: 600px; /* Chiều rộng tối đa */
+    margin: 20px auto; /* Căn giữa container */
+}
+
+.progress-bar {
+    background-color: #e0e0e0; /* Màu nền cho thanh tiến độ */
+    height: 8px; /* Chiều cao của thanh tiến độ */
+    border-radius: 4px; /* Bo góc thanh */
+    position: relative; /* Để định vị hình tròn bên trong */
+    width: 11cm; /* Chiều dài của thanh tiến độ */
+}
+
+.progress {
+    height: 100%; /* Chiều cao của tiến độ */
+    background-color: #a5464c; /* Màu sắc của tiến độ */
+    border-radius: 4px; /* Bo góc */
+}
+
+.progress-circle {
+    position: absolute; /* Định vị hình tròn trên thanh tiến độ */
+    top: -15px; /* Điều chỉnh để hình tròn nổi lên trên thanh */
+    left: calc(70% - 8cm); /* Lùi sang trái 8cm và căn giữa theo phần trăm */
+    transform: translate(-50%, 0); /* Căn giữa theo chiều ngang */
+    width: 18px; /* Kích thước hình tròn */
+    height: 18px; /* Kích thước hình tròn */
+    background-color: #ff5e6c; /* Màu nền hình tròn */
+    border-radius: 50%; /* Tạo hình tròn */
+    display: flex; /* Sử dụng flexbox để căn giữa văn bản */
+    justify-content: center; /* Căn giữa văn bản theo chiều ngang */
+    align-items: center; /* Căn giữa văn bản theo chiều dọc */
+    color: white; /* Màu chữ bên trong hình tròn */
+    font-weight: bold; /* Đậm chữ */
+    margin-top: 0.20cm;
+}
+
+.content-container {
+    width: 50%; /* Chiều rộng phần nội dung */
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.bio, .goals {
+    background-image: url('https://www.pngitem.com/pimgs/m/119-1191119_transparent-background-doodle-frame-png-png-download.png');
+    background-size: cover; /* Đảm bảo hình nền phủ kín */
+    background-position: center; /* Căn giữa hình nền */
+    padding: 25px;
+    margin-top: 1cm; /* Lùi xuống 2cm */
+    height: 330px; /* Chiều cao cố định để giữ cho hình nền đồng nhất */
+    position: relative; /* Đặt vị trí tương đối để điều chỉnh chữ mà không làm ảnh hưởng đến nền */
+}
+
+.bio ul, .goals ul {
+    position: absolute; /* Đặt vị trí tuyệt đối cho tiêu đề */
+    left: -30px; /* Lùi sang trái 1cm */
+    top: 5px; /* Lùi lên trên 1cm */
+    color: rgb(95, 29, 29);
+    max-width: 200px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Me</title> <!-- Changed title here -->
+</head>
+<body>
+    <div class="container">
+        <div class="profile-section">
+            <img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/464697538_1768739077201576_2836135681622286450_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHcl_-ppd1uPv-JC8yGBEyU6KlMnVDexV_oqUydUN7FX5ERYa58Y3E_lU36DQkUZ4kHGwPm9o0xwAsiKVq5ul1Z&_nc_ohc=XOh1NQHl--8Q7kNvgEEy944&_nc_zt=23&_nc_ht=scontent.fhan15-1.fna&_nc_gid=AwZrWjYuNI3NjZkoxTYKV9v&oh=00_AYDIAXnIJEAtFW5HbRrabXlvxrc6XmFP6nZpfQy5LuMPKw&oe=67243497" alt="Hình ảnh cá nhân" class="profile-pic">
+            <h1><i>Đàm Thị Minh Thư</i></h1>
+            <div class="info-section">
+                <ul>
+                    <i>🎂 Tuổi: 19</i></li>
+                    <p><i>📍 Địa chỉ: Hà Nội</i></p>
+                    <i>✉️ Email: thuthupl205@gmail.com</i></li>
+                </ul>
+                <div class="social-links">
+                    <p>🖊️<i><a href="https://www.instagram.com/_mthu1201/" target="_blank">Instagram</a></i></p>
+                    <p>🌐<i><a href="https://www.facebook.com/profile.php?id=100021965024045" target="_blank">Facebook</a></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="content-container">
+        <div class="tabs">
+            <button class="tab" onclick="showContent('bio')">Đôi nét về bản thân</button>
+            <button class="tab" onclick="showContent('hobbies')">Sở thích</button>
+            <button class="tab" onclick="showContent('skills')">Kỹ năng</button>
+            <button class="tab" onclick="showContent('goals')">Mục tiêu cá nhân</button>
+        </div>
+
+        <div class="content-section">
+            <div id="bio" class="tab-content">
+                <div class="bio">
+                <ul>
+                    <li><i>🌟 Tôi là sinh viên năm 2 chuyên ngành Công nghệ thông tin trường Đại học Thủ đô Hà Nội.</i></li>
+                    <li><i>💻 Là người có sự yêu thích đặc biệt với công nghệ, luôn sẵn sàng học hỏi, tìm tòi và có sự sáng tạo trong học tập.</i></li>
+                </ul>
+            </div>
+            </div>
+
+            <div id="hobbies" class="tab-content" style="display:none;">
+    <div class="hobbies-row">
+        <img src="https://flexhouse.vn/wp-content/uploads/2023/07/Gia-do-doc-sach-bang-go-tien-loi-J6556-1.jpg" alt="Đọc sách" class="hobby-img">
+        <img src="https://vua2hand.com/upload/images/co-nen-su-dung-tai-nghe-kiem-am-de-nghe-nhac-hay-khong.jpg" alt="Chơi thể thao" class="hobby-img">
+        <img src="https://tamlong.com.vn/wp-content/uploads/nam-mo-thay-nau-an-la-diem-bao-gi-1.jpg" alt="Nấu ăn" class="hobby-img">
+    </div>
+</div>
+
+<div id="skills" class="tab-content" style="display:none;">
+    <div class="skills-container">
+        <div class="skills-section">
+             <!-- Programming Skills Section -->
+        <div class="skills-section">
+            <div class="skill">
+                <div class="skill-name">Photoshop</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                    <div class="progress-circle" style="left: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Illustrator</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                    <div class="progress-circle" style="left: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Javascript</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 40%;"></div>
+                    <div class="progress-circle" style="left: 40%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+            <div id="goals" class="tab-content" style="display:none;">
+                <div class="goals">
+                <ul>
+                    <li><i>👤 Trở thành một người trưởng thành, làm nhiều việc có ích cho bản thân, gia đình và xã hội.</i></li>
+                    <li><i>📊 Trở thành một chuyên viên phân tích dữ liệu.</i></li>
+                </ul>
+            </div>
+            </div>
+    <script src="script.js"></script>
+</body>
+</html>
